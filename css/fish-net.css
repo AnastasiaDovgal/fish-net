@@ -1,0 +1,1386 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body {
+    --color-page: white;
+    --color-page-dark: #F5F5F5;
+    --color-menu-mobile: #FCFCFC;
+    --color-menu-mobile-active: #F9F9F9;
+    --color-main: #3EC492;
+    --color-text: #a1a4aa;
+    --color-footer: #373C44;
+    --color-footer-light: #3D434C;
+    --color-header-dark: #4c5166;
+    --color-frequently-asked-questions: #545861;
+    --color-line: #e0dede;
+    --color-footer-content-line: #4d5560;
+    --color-facebook: #3b5998;
+    --color-rss: #f26522;
+    --color-twitter: #55acee;
+    --color-youtube: #cd201f;
+    --color-envelope: black;
+    --color-box-shadow: rgb(212, 216, 219);
+
+    --font-main: "Cabin";
+    --font-header: "Patua One";
+
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    color: var(--color-text);
+    font-weight: 400;
+    transition: all 0.2s linear;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-header);
+    font-weight: 400;
+    color: var(--color-page);
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 100;
+}
+
+h2 {
+    color: var(--color-page);
+    font-size: 50px;
+    line-height: 58px;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.dark {
+    color: var(--color-header-dark);
+}
+
+.light {
+    color: var(--color-main);
+}
+
+p {
+    color: var(--color-text);
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    /* margin: 0;
+    padding: 0; */
+    width: 100%;
+}
+
+button {
+    border: none;
+    font-family: var(--font-header);
+    color: var(--color-page);
+    background-color: var(--color-footer-light);
+    font-size: 16px;
+    padding: 13px 29px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--color-page);
+    background-color: var(--color-main);
+}
+
+.dark-button:hover {
+    background-color: var(--color-footer-light);
+}
+
+.contact-us {
+    color: var(--color-footer-light);
+    background-color: var(--color-page);
+    padding: 17px 40px;
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+.we-care-because-you-care button {
+    background-color: var(--color-main);
+}
+
+/* a,
+:hover button:hover {
+    transition-property: color, background-color, border-color;
+    transition: all 0.2s linear;
+    transition: color, background-color, border-color 10s linear;
+} */
+
+a:hover,
+button:hover {
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.header-container {
+    height: 87px;
+}
+
+header {
+    background-color: var(--color-page);
+    display: flex;
+    padding: 10px 50px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0px 0px 3px 0px var(--color-box-shadow);
+}
+
+.logo {
+    display: flex;
+    padding: 5px 0;
+}
+
+.logo span {
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 25px;
+    font-family: var(--font-header);
+    color: var(--color-footer-light);
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu {
+    display: flex;
+    align-items: center;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--color-text);
+    font-family: var(--font-main);
+}
+
+ul {
+    padding: 15px 0;
+}
+
+li {
+    line-height: 27px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+menu a {
+    font-family: var(--font-header);
+    color: var(--color-footer-light);
+    padding: 11px 30px;
+    font-size: 18px;
+}
+
+menu a:hover {
+    color: var(--color-page);
+    background-color: var(--color-main);
+}
+
+.active {
+    color: var(--color-page) !important;
+    background-color: var(--color-main) !important;
+}
+
+.fixed {
+    color: var(--color-page);
+    background-color: var(--color-footer-light);
+    margin-left: 30px;
+}
+
+.menu-mobile-icon-container {
+    display: none;
+}
+
+.menu-mobile-icon {
+    color: var(--color-main);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#menu-mobile {
+    display: none;
+    color: var(--color-page-dark);
+}
+
+#menu-mobile a {
+    display: block;
+    width: 100%;
+    color: var(--color-header-dark);
+    background-color: var(--color-menu-mobile);
+    font-size: 18px;
+    padding: 20px 50px;
+    box-shadow: 0px 0px 3px 0px var(--color-box-shadow);
+}
+
+#menu-mobile a:hover {
+    background-color: var(--color-menu-mobile-active);
+}
+
+#menu-mobile-active {
+    background-color: var(--color-menu-mobile-active);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.professional-care-for-your-pet {
+    background-image: url(../img/pattern_bgheader.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.professional-care-for-your-pet-text {
+    text-align: center;
+    margin: 115px 30px 30px;
+}
+
+.separator {
+    margin: 29px 0;
+}
+
+.pets {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.clouds {
+    margin-top: -300px;
+    z-index: 1;
+}
+
+.clouds-under {
+    margin-top: -200px;
+    height: 200px;
+    background-color: var(--color-page);
+    z-index: 1;
+}
+
+.expert-pet-care {
+    margin-top: 60px;
+}
+
+.expert-pet-care-text-contact {
+    display: flex;
+    align-items: center;
+}
+
+.expert-pet-care-text {
+    width: 50%;
+    padding: 0 50px 55px 50px;
+}
+
+.expert-pet-care-text h2 {
+    padding-bottom: 10px;
+}
+
+.expert-pet-care-text p {
+    padding-top: 20px;
+}
+
+.contact-container {
+    color: var(--color-page);
+    width: 50%;
+    padding: 0 50px 50px 50px;
+}
+
+.contact-container-phone {
+    background-color: var(--color-main);
+    display: flex;
+    align-items: center;
+    height: 140px;
+}
+
+.contact-container-email {
+    background-color: var(--color-footer-light);
+    display: flex;
+    align-items: center;
+    height: 140px;
+}
+
+.contact-container-phone-icon {
+    font-size: 250%;
+    margin: 0 5px 0 45px;
+}
+
+.contact-container-email-icon {
+    color: var(--color-main);
+    font-size: 253%;
+    margin-left: 40px;
+}
+
+.contact-container-info p {
+    color: var(--color-page);
+    margin-left: 40px;
+}
+
+.contact-container-connect {
+    font-size: 37px;
+    cursor: pointer;
+}
+
+.expert-pet-care-services {
+    margin: 40px 40px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.expert-pet-care-service {
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    margin: 30px 40px;
+}
+
+.expert-pet-care-service-icon {
+    color: var(--color-main);
+    font-size: 88px;
+    width: 88px;
+    margin-bottom: 16px;
+}
+
+@-webkit-keyframes hvr-wobble-horizontal {
+    16.65% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    33.3% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+
+    49.95% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+
+    66.6% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+
+    83.25% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes hvr-wobble-horizontal {
+    16.65% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    33.3% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+
+    49.95% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+
+    66.6% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+
+    83.25% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.hvr-wobble-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.expert-pet-care-service:hover .hvr-wobble-horizontal,
+.hvr-wobble-horizontal:focus,
+.hvr-wobble-horizontal:active {
+    -webkit-animation-name: hvr-wobble-horizontal;
+    animation-name: hvr-wobble-horizontal;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.expert-pet-care-service:hover h4 {
+    color: var(--color-main);
+}
+
+.testimonials {
+    background-color: var(--color-page-dark);
+    padding: 80px 50px 50px 50px;
+}
+
+.testimonial {
+    width: 30%;
+    padding-bottom: 40px;
+}
+
+.testimonial p {
+    color: var(--color-main);
+}
+
+.testimonial-quote {
+    background: var(--color-page);
+    font-style: italic;
+    padding: 25px;
+}
+
+.testimonial-author {
+    padding: 12px 0 0 2px;
+    display: flex;
+}
+
+.testimonial-author p {
+    align-items: center;
+}
+
+.testimonial-author-avtar {
+    margin-right: 30px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.arrow-down {
+    position: relative;
+}
+
+.arrow-down::after {
+    border-top-color: var(--color-page) !important;
+    position: absolute;
+    left: 35px;
+    top: 0;
+    content: " ";
+    border: medium solid transparent;
+    border-width: 10px;
+}
+
+.complete-care {
+    background-image: url(../img/pattern_bg_2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 105px 50px 115px 50px;
+    text-align: center;
+}
+
+.complete-care-paragraph {
+    color: var(--color-page);
+    margin: 0 22vw;
+}
+
+.services {
+    padding: 105px 50px;
+    justify-content: center;
+}
+
+.services-blurbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.service {
+    width: 33.33%;
+    margin-bottom: 60px;
+}
+
+.blurb-header {
+    width: 100%;
+}
+
+.blurb-header-container {
+    position: relative;
+    cursor: pointer;
+    background-color: var(--color-footer-light);
+}
+
+.blurb-header-container img {
+    display: block;
+}
+
+.blurb-header-container img {
+    width: 100%;
+}
+
+.blurb-header-container:hover img {
+    opacity: 0.1;
+}
+
+.blurb-header-container div {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.blurb-header-container:hover div {
+    transition: all 2s linear;
+    display: flex;
+    height: 100%;
+}
+
+.icon-bg {
+    color: var(--color-main);
+}
+
+.service-text {
+    padding: 50px 45px 0 45px;
+    width: auto;
+}
+
+.service-text h3 {
+    margin-bottom: 20px;
+}
+
+.text-line {
+    border-color: var(--color-line);
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 0;
+    margin-bottom: 20px;
+}
+
+.professional-pet-care {
+    background-image: url(../img/girl_with_rabbit_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+
+.separator-up {
+    position: relative;
+    padding: 0 160px 70px 160px;
+    width: 100%;
+}
+
+.separator-up::before,
+.separator-up::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.roundedsplit-up {
+    padding-top: 7em;
+    border-radius: 0 0 80px 80px;
+}
+
+.roundedsplit-up::before,
+.roundedsplit-up::after {
+    top: -70px;
+    left: 0;
+    width: 50%;
+    height: 70px;
+    background: var(--color-page);
+}
+
+.roundedsplit-up::before {
+    right: 50%;
+    border-radius: 0 0 80px 0;
+}
+
+.roundedsplit-up::after {
+    left: 50%;
+    border-radius: 0 0 0 80px;
+}
+
+.professional-pet-care-content {
+    padding: 130px 50px 138px 50px;
+}
+
+.professional-pet-care-paragraph {
+    color: var(--color-page);
+    margin: 0 11vw;
+}
+
+footer {
+    background-color: var(--color-footer-light);
+    padding: 0 30px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-content {
+    width: 25%;
+    padding: 70px 20px 0;
+}
+
+.footer-content iframe {
+    width: 100%;
+}
+
+.footer-content-fish-net-paragraph {
+    margin: 20px 0 30px;
+}
+
+.footer-stack-icon {
+    margin: 5px 0;
+}
+
+.footer-icon {
+    display: inline-block;
+    position: relative;
+}
+
+.footer-icon-tooltip {
+    display: none;
+    font-size: 14px;
+    background-color: var(--color-envelope);
+    border-radius: 6px;
+}
+
+.footer-icon-tooltip::after {
+    content: "";
+    position: absolute;
+    border-width: 5px;
+    margin-left: -5px;
+    border-style: solid;
+    border-color: var(--color-envelope) transparent transparent transparent;
+    top: 100%;
+    left: 50%;
+}
+
+.footer-icon:hover .footer-icon-tooltip {
+    display: inline-block;
+    position: absolute;
+    padding: 3px 7px;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-content-line {
+    border-color: var(--color-footer-content-line);
+    border-top-width: 2px;
+    width: 50px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-bottom-width: 0;
+    margin: 25px 0;
+}
+
+.footer-content-contact-info-paragraph-icon {
+    color: var(--color-text);
+    margin-right: 11px;
+}
+
+.hover-green {
+    color: var(--color-text);
+}
+
+.hover-green:hover {
+    cursor: pointer;
+    color: var(--color-main);
+}
+
+.footer-under {
+    background-color: var(--color-footer);
+    padding: 28px 50px;
+    display: block;
+    text-align: center;
+}
+
+.footer-under p {
+    color: var(--color-text);
+    font-size: 13px;
+}
+
+.roundedsplit-down-section {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+
+.separator-down {
+    position: relative;
+    padding: 0 160px 70px 160px;
+    width: 100%;
+}
+
+.separator-down::before,
+.separator-down::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.roundedsplit-down::before,
+.roundedsplit-down::after {
+    bottom: -70px;
+    width: 50%;
+    height: 70px;
+    background: var(--color-page);
+}
+
+.roundedsplit-down::before {
+    right: 50%;
+    border-radius: 0 80px 0 0;
+}
+
+.roundedsplit-down::after {
+    left: 50%;
+    border-radius: 80px 0 0 0;
+}
+
+.roundedsplit-down-section-content {
+    padding: 250px 50px 182px 50px;
+    align-content: center;
+    justify-content: center;
+}
+
+.roundedsplit-down-section-content p {
+    color: var(--color-page);
+    font-size: 18px;
+}
+
+.the-best-care-for-your-best-friend {
+    padding: 70px 50px 50px 50px;
+}
+
+.the-best-care-for-your-best-friend div {
+    width: 50%;
+}
+
+.the-best-care-for-your-best-friend-conteiner {
+    padding-bottom: 50px;
+}
+
+.smal-pets {
+    width: 100%;
+}
+
+.the-best-care-for-your-best-friend-content {
+    padding: 0 0 50px 85px;
+}
+
+.the-best-care-for-your-best-friend-content h2 {
+    padding-bottom: 30px;
+}
+
+.list-items-icon {
+    color: var(--color-main);
+    margin: 0 12px 0 5px;
+}
+
+.the-best-care-for-your-best-friend-content img {
+    width: auto;
+    margin: 5px 0 10px;
+}
+
+.lettie-hubbard-testimonial {
+    background-image: url(../img/pattern_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 90px 100px 100px;
+    text-align: center;
+    width: 67%;
+}
+
+.lettie-hubbard-testimonial img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.lettie-hubbard-testimonial p {
+    color: var(--color-page);
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.lettie-hubbard-container {
+    width: 33%;
+    background-image: url(../img/women_with_dog_2.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.frequently-asked-questions {
+    background-image: url(../img/frequently_asked_questions.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 35px;
+}
+
+.frequently-asked-questions-header {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.frequently-asked-questions-header p {
+    padding: 0 21vw;
+    color: var(--color-page);
+}
+
+.frequently-asked-questions-accordion {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.frequently-asked-questions-accordion-container {
+    padding: 20px;
+    margin: 13px 0;
+    background-color: var(--color-page);
+}
+
+.frequently-asked-questions-accordion-container:hover {
+    background-color: var(--color-frequently-asked-questions);
+    cursor: pointer;
+}
+
+.frequently-asked-questions-accordion-header {
+    color: var(--color-frequently-asked-questions);
+}
+
+.frequently-asked-questions-accordion-container:hover .frequently-asked-questions-accordion-header {
+    color: var(--color-main);
+}
+
+.frequently-asked-questions-accordion-container:hover .fa-plus-square {
+    color: var(--color-page);
+}
+
+.frequently-asked-questions-accordion-header span {
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.frequently-asked-questions-accordion-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.if-you-have {
+    background-color: var(--color-main);
+    align-items: center;
+    padding: 40px 50px;
+}
+
+.if-you-have h3 {
+    padding: 25px 0;
+}
+
+.expert-advice {
+    background-color: var(--color-page-dark);
+    padding: 100px 50px 70px;
+}
+
+.expert-advice-content {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.expert-advice-content p {
+    margin: 0 21vw;
+}
+
+.expert-advice-blurbs {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.expert-advice-blurb {
+    width: 31.2%;
+    margin: 30px 0;
+    background-color: var(--color-page);
+}
+
+.expert-advice-blurb-text {
+    padding: 30px 20px 0;
+}
+
+.expert-advice-blurb-text h3 {
+    margin-bottom: 20px;
+}
+
+.expert-advice-blurb-text a {
+    color: var(--color-main);
+    display: inline-block;
+    margin: 40px 0 30px;
+    letter-spacing: 1px;
+}
+
+.roundedsplit-dark::before,
+.roundedsplit-dark::after {
+    background-color: var(--color-page-dark);
+}
+
+.we-care-because-you-care {
+    align-items: center;
+    padding: 0 50px;
+}
+
+.we-care-because-you-care div {
+    width: 50%;
+}
+
+.we-care-because-you-care p {
+    margin: 30px 0 10px;
+}
+
+.we-care-because-you-care ul {
+    margin-bottom: 15px;
+}
+
+.we-care-because-you-care img {
+    width: 50%;
+    padding-top: 75px;
+}
+
+.our-treatments {
+    background-image: url(../img/pattern_bg_2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 105px 50px 115px 50px;
+    justify-content: center;
+}
+
+.expert-advice-blurbs-pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.expert-advice-blurbs-pagination a {
+    color: var(--color-main);
+    background-color: var(--color-page-dark);
+    padding: 18px 25px;
+    margin: 40px 4px 0;
+    border: var(--color-box-shadow) 1px solid;
+}
+
+.expert-advice-blurbs-pagination a:hover {
+    border: var(--color-main) 1px solid;
+}
+
+.contact {
+    background-color: var(--color-page-dark);
+    align-items: flex-start;
+    padding: 100px 0 80px;
+}
+
+.contact h3 {
+    padding-bottom: 30px;
+}
+
+.contact-make-appointment {
+    width: 50%;
+    padding: 0 50px 50px;
+}
+
+form {
+    padding: 30px 0;
+}
+
+form input,
+select,
+textarea {
+    display: block;
+    padding: 15px 10px;
+    margin: 20px 0;
+    width: 100%;
+    border: var(--color-box-shadow) 1px solid;
+    color: var(--color-header-dark);
+    font-family: var(--font-main);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--color-text);
+    font-family: var(--font-main);
+}
+
+.form-select {
+    display: flex;
+    position: relative;
+}
+
+.select-arrow {
+    border: var(--color-box-shadow) 1px solid;
+    background-color: var(--color-page);
+    width: 50px;
+    height: 48px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.select-arrow i {
+    color: var(--color-text);
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    overflow: visible !important;
+    z-index: 5;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+.roundedsplit-up-dark::before,
+.roundedsplit-up-dark::after {
+    background-color: var(--color-page-dark);
+}
+
+.expert-pet-care-text-contact-link-icon-section {
+    margin: 100px 0 70px;
+}
+
+.main-services .services-column,
+.sharlene-wilson {
+    width: 50%;
+}
+
+.services-column {
+    padding: 60px 50px 70px;
+    background-color: var(--color-page-dark);
+}
+
+.services-column a:hover h4,
+a:hover .services-column-circle-icon {
+    transition: all 0.2s linear;
+    color: var(--color-main);
+}
+
+@-webkit-keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+
+@keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+
+.hvr-ripple-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.hvr-ripple-out:before {
+    content: '';
+    position: absolute;
+    border: #e1e1e1 solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.services-column a:hover .hvr-ripple-out:before,
+.hvr-ripple-out:focus:before,
+.hvr-ripple-out:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
+}
+
+.hvr-ripple-out-circle {
+    border-radius: 50%;
+    background-color: var(--color-footer);
+    width: 2em;
+    height: 2em;
+}
+
+.hvr-ripple-out-circle:before {
+    border-radius: 50%;
+    border: var(--color-footer) solid 6px;
+}
+
+.services-column a:hover .hvr-ripple-out-circle {
+    background-color: var(--color-main);
+}
+
+.services-column a:hover .hvr-ripple-out-circle:before {
+    border: var(--color-main) solid 20px;
+}
+
+.services-column a {
+    display: flex;
+    align-content: space-around;
+    padding: 30px 0;
+}
+
+.services-column-content {
+    margin-left: 20px;
+}
+
+.services-column div {
+    width: auto;
+}
+
+.services-column-circle-icon {
+    color: var(--color-footer);
+}
+
+.services-column p {
+    color: var(--color-footer-content-line);
+    padding-top: 20px;
+}
+
+.main-services-pagination {
+    margin-top: 30px;
+}
+
+.main-services-pagination a {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: var(--color-page) 1px solid;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.main-services-pagination a:hover {
+    background-color: var(--color-page);
+}
+
+.active-button-testimonial {
+    background-color: var(--color-page);
+}
+
+.galery a {
+    width: 25%;
+    overflow: hidden;
+}
+
+.galery img {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.galery img:hover {
+    transition: all 0.5s linear;
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1100px) {
+    .contact-container i {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    menu {
+        display: none;
+    }
+
+    .menu-mobile-icon-container {
+        width: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .expert-pet-care-text-contact,
+    .contact-container i {
+        display: block;
+    }
+
+    .expert-pet-care-text,
+    .contact-container,
+    .testimonial,
+    .the-best-care-for-your-best-friend div,
+    .lettie-hubbard div,
+    .frequently-asked-questions-accordion,
+    .we-care-because-you-care div,
+    .contact-make-appointment,
+    .main-services .services-column,
+    .lettie-hubbard-testimonial {
+        width: 100%;
+    }
+
+    .footer-content iframe {
+        width: auto;
+    }
+
+    .complete-care-paragraph,
+    .expert-advice-content p {
+        margin: 0;
+    }
+
+    .service,
+    .footer-content,
+    .galery a {
+        width: 50%;
+    }
+
+    .the-best-care-for-your-best-friend-content {
+        padding: 0 0 50px 0;
+    }
+
+    .frequently-asked-questions-header p {
+        padding: 0 50px;
+    }
+
+    .lettie-hubbard-testimonial {
+        padding: 90px 50px 100px 50px;
+    }
+
+    .lettie-hubbard-container {
+        background-image: url(..//img/women_with_dog_3.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 705px;
+    }
+
+    .expert-advice-blurbs {
+        justify-content: center;
+    }
+
+    .expert-advice-blurb {
+        width: 43%;
+        margin: 30px 20px 0;
+    }
+
+    .we-care-because-you-care div {
+        padding-top: 75px;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .if-you-have {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .service,
+    .footer-content,
+    .expert-advice-blurb,
+    .galery a {
+        width: 100%;
+    }
+
+    .lettie-hubbard-container {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .contact-container i {
+        display: none;
+    }
+}
+
+@media screen and (min-width:0\0) {
+    select {
+        background: none\9;
+        padding: 5px\9;
+    }
+}
+
+/* 1111 1043 659*/

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services Page</title>
+    <link rel="stylesheet" href="../css/fish-net.css">
+    <link href='https://fonts.googleapis.com/css?family=Patua One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="header-container">
+        <header>
+            <div class="logo">
+                <img src="../img/vet_logo.png" alt="logo PET CARE">
+                <span>PET CARE</span>
+            </div>
+
+            <menu>
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="advice.html">Advice</a>
+                <a href="contact.html" class="fixed">CONTACT</a>
+            </menu>
+
+            <div class="menu-mobile-icon-container">
+                <i style="cursor: pointer;" class="fas fa-bars menu-mobile-icon" onclick="vetMenu()"></i>
+            </div>
+        </header>
+    </div>
+
+    <div id="menu-mobile">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" id="menu-mobile-active">Services</a>
+        <a href="advice.html">Advice</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <main>
+        <section style="background-image: url(../img/services_header_bg.jpg);" class="roundedsplit-down-section">
+            <div class="separator-down roundedsplit-down roundedsplit-down-section-content">
+                <div>
+                    <h1>Our Services</h1>
+                    <p>Home • Services</p>
+                </div>
+            </div>
+
+            <div class="separator-down"></div>
+        </section>
+
+        <section class="we-care-because-you-care">
+            <div>
+                <h2 class="dark">We Care Because You Care</h2>
+                <p>Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                    dignissim, turpis ipsum sollicitudin sem condimentum sagittis. Curabitur metus risus,
+                    porttitor vel justo malesuada, semper rhoncus quam. Pellentesque habitant morbi tristique
+                    senectus et netus et malesuada fames ac turpis egestas:</p>
+                <ul>
+                    <li>
+                        <i class="list-items-icon fas fa-paw"></i>
+                        Pellentesque vitae ullamcorper nulla.
+                    </li>
+                    <li>
+                        <i class="list-items-icon fas fa-paw"></i>
+                        Cras non nunc libero
+                    </li>
+                    <li>
+                        <i class="list-items-icon fas fa-paw"></i>
+                        Vivamus fermentum a sapien id
+                    </li>
+                </ul>
+
+                <a href="contact.html"><button class="dark-button">MAKE AN APPOINTMENT</button></a>
+            </div>
+
+            <img src="../img/man_dog.jpg" alt="man with a dog">
+        </section>
+
+        <section class="our-treatments">
+            <h2>Our Treatments</h2>
+        </section>
+
+        <section class="services" style="padding-bottom: 50px;">
+            <div class="services-blurbs">
+                <div class="service">
+                    <div class="blurb-header-container">
+                        <img class="blurb-header" src="../img/women_with_dog.jpg" alt="emergency-care">
+                        <div>
+                            <a href="emergency-care.html">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                    <i class="fas fa-link fa-stack-1x fa-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                <i class="fas fa-search fa-stack-1x fa-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="service-text">
+                        <h3 class="light">Emergency Care</h3>
+                        <p>
+                            Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                            dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus. Quisque
+                            varius odio ante, ac viverra.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="blurb-header-container">
+                        <img class="blurb-header" src="../img/pet_grooming_img.jpg" alt="pet-grooming">
+                        <div>
+                            <a href="pet-grooming.html">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                    <i class="fas fa-link fa-stack-1x fa-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                <i class="fas fa-search fa-stack-1x fa-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="service-text">
+                        <h3 class="light">Pet Grooming</h3>
+                        <p>
+                            Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                            dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus. Quisque
+                            varius odio ante, ac viverra.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="blurb-header-container">
+                        <img class="blurb-header" src="../img/vaccinations_img.jpg" alt="vaccinations">
+                        <div>
+                            <a href="vaccinations.html">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                    <i class="fas fa-link fa-stack-1x fa-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                <i class="fas fa-search fa-stack-1x fa-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="service-text">
+                        <h3 class="light">Vaccinations</h3>
+                        <p>
+                            Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                            dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus. Quisque
+                            varius odio ante, ac viverra.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="blurb-header-container">
+                        <img class="blurb-header" src="../img/nutrition_img.jpg" alt="Nutrition">
+                        <div>
+                            <a href="nutrition.html">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                    <i class="fas fa-link fa-stack-1x fa-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                <i class="fas fa-search fa-stack-1x fa-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="service-text">
+                        <h3 class="light">Nutrition</h3>
+                        <p>
+                            Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                            dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus. Quisque
+                            varius odio ante, ac viverra.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="blurb-header-container">
+                        <img class="blurb-header" src="../img/surgery_img.jpg" alt="Surgery">
+                        <div>
+                            <a href="surgery.html">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                    <i class="fas fa-link fa-stack-1x fa-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                <i class="fas fa-search fa-stack-1x fa-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="service-text">
+                        <h3 class="light">Surgery</h3>
+                        <p>
+                            Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                            dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus. Quisque
+                            varius odio ante, ac viverra.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="blurb-header-container">
+                        <img class="blurb-header" src="../img/check_ups_img.jpg" alt="Check Ups">
+                        <div>
+                            <a href="check-ups.html">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                    <i class="fas fa-link fa-stack-1x fa-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-1x fa-2x icon-bg"></i>
+                                <i class="fas fa-search fa-stack-1x fa-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="service-text">
+                        <h3 class="light">Check Ups</h3>
+                        <p>
+                            Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                            dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus. Quisque
+                            varius odio ante, ac viverra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="frequently-asked-questions">
+            <div class="frequently-asked-questions-header">
+                <h2>Frequently Asked Questions</h2>
+                <img class="separator" src="../img/img_cat.webp" alt="cat">
+                <p>Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                    dignissim, turpis ipsum. Mauris at feugiat mauris. Nam a dolor eros.</p>
+            </div>
+
+            <div class="frequently-asked-questions-accordion">
+                <div class="frequently-asked-questions-accordion-container">
+                    <h4 class="frequently-asked-questions-accordion-header">
+                        <span class="fa-stack">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Sed cursus, nunc non vestibulum dictum?
+                    </h4>
+                    <p class="frequently-asked-questions-accordion-content">
+                        Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                        dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus.
+                    </p>
+                </div>
+                <div class="frequently-asked-questions-accordion-container">
+                    <h4 class="frequently-asked-questions-accordion-header">
+                        <span class="fa-stack">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Maecenas volutpat posuere nisi, quis?
+                    </h4>
+                    <p class="frequently-asked-questions-accordion-content">
+                        Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                        dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus.
+                    </p>
+                </div>
+                <div class="frequently-asked-questions-accordion-container">
+                    <h4 class="frequently-asked-questions-accordion-header">
+                        <span class="fa-stack">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Quisque pharetra libero vitae nunc scelerisque?
+                    </h4>
+                    <p class="frequently-asked-questions-accordion-content">
+                        Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                        dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus.
+                    </p>
+                </div>
+                <div class="frequently-asked-questions-accordion-container">
+                    <h4 class="frequently-asked-questions-accordion-header">
+                        <span class="fa-stack">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Integer leo dolor, auctor id felis?
+                    </h4>
+                    <p class="frequently-asked-questions-accordion-content">
+                        Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                        dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus.
+                    </p>
+                </div>
+            </div>
+
+            <div class="frequently-asked-questions-accordion">
+                <div class="frequently-asked-questions-accordion-container">
+                    <h4 class="frequently-asked-questions-accordion-header">
+                        <span class="fa-stack">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Sed cursus, nunc non vestibulum dictum?
+                    </h4>
+                    <p class="frequently-asked-questions-accordion-content">
+                        Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                        dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus.
+                    </p>
+                </div>
+                <div class="frequently-asked-questions-accordion-container">
+                    <h4 class="frequently-asked-questions-accordion-header">
+                        <span class="fa-stack">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Maecenas volutpat posuere nisi, quis?
+                    </h4>
+                    <p class="frequently-asked-questions-accordion-content">
+                        Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                        dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus.
+                    </p>
+                </div>
+                <div class="frequently-asked-questions-accordion-container">
+                    <h4 class="frequently-asked-questions-accordion-header">
+                        <span class="fa-stack">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Quisque pharetra libero vitae nunc scelerisque?
+                    </h4>
+                    <p class="frequently-asked-questions-accordion-content">
+                        Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                        dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus.
+                    </p>
+                </div>
+                <div class="frequently-asked-questions-accordion-container">
+                    <h4 class="frequently-asked-questions-accordion-header">
+                        <span class="fa-stack">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Integer leo dolor, auctor id felis?
+                    </h4>
+                    <p class="frequently-asked-questions-accordion-content">
+                        Quisque id leo non dolor tempor elementum quis ac urna. Nam pharetra, ligula eget finibus
+                        dignissim, turpis ipsum sollicitudin sem, sed vestibulum dui nisi ut purus.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="testimonial">
+                <p class="testimonial-quote">
+                    "Perhaps it is because cats do not live by human patterns, do not fit themselves into
+                    prescribed behavior, that they are so united to creative people."
+                </p>
+                <div class="testimonial-author arrow-down">
+                    <img class="testimonial-author-avtar" src="../img/avtar_s2.webp" alt="avtar">
+                    <p>
+                        <strong>Lenora Christensen</strong>, Veterinary Nurse
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-quote">
+                    "Perhaps it is because cats do not live by human patterns, do not fit themselves into
+                    prescribed behavior, that they are so united to creative people."
+                </p>
+                <div class="testimonial-author arrow-down">
+                    <img class="testimonial-author-avtar" src="../img/avtar_s2.webp" alt="avtar">
+                    <p>
+                        <strong>Lenora Christensen</strong>, Veterinary Nurse
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-quote">
+                    "Perhaps it is because cats do not live by human patterns, do not fit themselves into
+                    prescribed behavior, that they are so united to creative people."
+                </p>
+                <div class="testimonial-author arrow-down">
+                    <img class="testimonial-author-avtar" src="../img/avtar_s2.webp" alt="avtar">
+                    <p>
+                        <strong>Lenora Christensen</strong>, Veterinary Nurse
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="professional-pet-care">
+            <div class="separator-up"></div>
+
+            <div class="separator-up roundedsplit-up professional-pet-care-content roundedsplit-dark">
+                <div>
+                    <h2>Professional Pet Care</h2>
+                    <img class="separator" src="../img/img_cat.webp" alt="cat">
+                </div>
+
+                <p class="professional-pet-care-paragraph">
+                    Pet owners trust us to look after the needs of their beloved companions. We are
+                    specialists committed to delivering the
+                    very highest of veterinary care and affection.
+                </p>
+
+                <a href="contact.html"><button class="contact-us">CONTACT US</button></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="../img/vet_logo.png" alt="logo PET CARE">
+                <span style="color: var(--color-page)">PET CARE</span>
+            </div>
+
+            <p class="footer-content-fish-net-paragraph">
+                Pet owners trust us to look after the
+                needs of their beloved companions.
+                We are specialists committed to
+                delivering the very highest of
+                veterinary care and affection.
+            </p>
+
+            <a href="http://www.facebook.com" class="footer-icon">
+                <span class="footer-icon-tooltip">Facebook</span>
+                <span class="fa-stack fa-lg footer-stack-icon">
+                    <i class="fa fa-square fa-stack-1x fa-2x" style="color: var(--color-facebook);"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="http://www.rss.com" class="footer-icon">
+                <span class="footer-icon-tooltip">Rss</span>
+                <span class="fa-stack fa-lg footer-stack-icon">
+                    <i class="fa fa-square fa-stack-1x fa-2x" style="color: var(--color-rss);"></i>
+                    <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="http://www.twitter.com" class="footer-icon">
+                <span class="footer-icon-tooltip">Twitter</span>
+                <span class="fa-stack fa-lg footer-stack-icon">
+                    <i class="fa fa-square fa-stack-1x fa-2x" style="color: var(--color-twitter);"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="http://www.youtube.com" class="footer-icon">
+                <span class="footer-icon-tooltip">YouTube</span>
+                <span class="fa-stack fa-lg footer-stack-icon">
+                    <i class="fa fa-square fa-stack-1x fa-2x" style="color: var(--color-youtube);"></i>
+                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a href="mailto:koshka@gmail.com" class="footer-icon">
+                <span class="footer-icon-tooltip">Mail</span>
+                <span class="fa-stack fa-lg footer-stack-icon">
+                    <i class="fa fa-square fa-stack-1x fa-2x" style="color: var(--color-envelope);"></i>
+                    <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+
+        <div class="footer-content">
+            <h4>CONTACT INFO</h4>
+            <div class="footer-content-line"></div>
+
+            <p>
+                <i class="fa fa-phone footer-content-contact-info-paragraph-icon"></i>
+                <a href="tel://+380500222861"><span class="hover-green">+380 500 222 861</span></a>
+            </p>
+            <p>
+                <i class="far fa-envelope footer-content-contact-info-paragraph-icon"></i>
+                <a href="mailto:koshka@gmail.com"><span class="hover-green">koshka@gmail.com</span></a>
+            </p>
+            <p>
+                <i class="fa fa-home footer-content-contact-info-paragraph-icon"></i>
+                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83405.15599169585!2d31.816201271182422!3d49.21172972640019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d140616c4c4401%3A0x87baa02ce135bf2c!2sSmila%2C+Cherkasy+Oblast%2C+20700!5e0!3m2!1sen!2sua!4v1556194714121!5m2!1sen!2sua"
+                    target="_blank"><span class="hover-green">Ukraine</span></a>
+            </p>
+        </div>
+
+        <div class="footer-content">
+            <h4>OPENING HOURS</h4>
+            <div class="footer-content-line"></div>
+
+            <p>Monday - Tuesday 09:00 - 18:00</p>
+            <p>Wednesday 11:00 - 20:00</p>
+            <p>Thursday - Friday 09:00 - 18:00</p>
+            <p>Saturday 10:00 - 17:00</p>
+            <p>Sunday 10:30 - 16:00</p>
+        </div>
+
+        <div class="footer-content">
+            <h4>OUR LOCATION</h4>
+            <div class="footer-content-line"></div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83405.15599169585!2d31.816201271182422!3d49.21172972640019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d140616c4c4401%3A0x87baa02ce135bf2c!2sSmila%2C+Cherkasy+Oblast%2C+20700!5e0!3m2!1sen!2sua!4v1556194714121!5m2!1sen!2sua"
+                width="270" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </footer>
+    <footer class="footer-under">
+        <p>© 2019 Anastasia Dovgal. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/fish-net.js"></script>
+
+</body>
+
+</html>
